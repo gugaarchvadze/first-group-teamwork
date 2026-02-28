@@ -206,3 +206,175 @@ a { text-decoration: none; }
   .post-media{ width: 100%; height: 260px; }
   .desc{ max-width: 100%; }
 }
+
+
+
+
+
+
+/* footerის სექცია */
+
+.site-footer{
+  max-width: 1440px;
+  height: 308px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 40px 40px 0 0;
+}
+
+
+
+/* content area inside footer*/
+
+.footer-inner{
+  padding: 90px 86px 95px 86px; 
+}
+
+
+
+/* ზედა მხარე footerის */
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* footerის ლოგო */
+
+.footer-brand{
+  font-family: "Cinzel", serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+  color: #262626;
+}
+
+
+/* ლოგოს ტექსტის ნაწილის უკან ლურჯი მონიშვნა */
+
+.brand-highlight{
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+
+
+/* ქმნის უკანა ლურჯ  მონიშნულ ფონს */
+
+.brand-highlight::before{
+  content: "";
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  top: 25%;             
+  height: 0.7em;         
+  background-color: #4CE0D7;
+  z-index: -1;
+}
+
+
+/* footer-s ქვედა  მარჯვენა მხარე: სათაური და სოციალური მედიის ნიშნები */
+
+.footer-social{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+
+
+/* "Let's Hang Out" ტექსტის გასტილვა */
+
+
+
+.footer-title{
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  color: #262626;
+}
+
+
+
+/* სოციალური ქსელები */
+
+
+.socials{
+  display: flex;
+  gap: 14px;
+}
+
+
+
+
+/* სოციალური ქსელები */
+
+
+.socials img{
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+
+
+
+/* ფოოტერ-ს გამყოფი ხაზი */
+
+.footer-divider{
+  max-width: 1267px;
+  width: 100%;
+  height: 1px;
+  background-color: #BCBCBC;
+  margin: 90px auto 34px; 
+}
+
+
+
+
+/* COPYRIGHT */
+
+.footer-bottom{
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  color: #262626;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1400px){
+  .footer-divider{
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px){
+  .site-footer{
+    height: auto;
+  }
+
+  .footer-inner{
+    padding: 60px 24px;
+  }
+
+  .footer-top{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
+
+
+

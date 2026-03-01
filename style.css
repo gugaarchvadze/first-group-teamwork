@@ -118,7 +118,7 @@ h3 {
     margin-bottom: 23px;
 }
 
-.readmore {
+.readmore2 {
     display: flex;                
     align-items: center;           
     gap: 10px;                     
@@ -129,7 +129,7 @@ h3 {
 }
 
 
-.readmore img {
+.readmore2 img {
     width: 50px;
     height: 40px;
     

@@ -1,10 +1,406 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    Text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+a { text-decoration: none; }
+
+
+
+
+/* ბოლოს სამი სურათის მთლიანი კოდი */
+
+.posts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  margin-top: 2924px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  background-color: #f9f9f9;
+}
+
+
+
+
+
+
+ /* (ბოლო სამი სურათის) სურათი+პოსტის კოდი */
+.post-card{
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex; 
+  width: 1204px;
+  height: 368px;
+}
+
+
+
+
+/* (ბოლო სამი სურათი) სურათი+თაგის კოდი */
+
+.post-media{
+  position: relative;
+  width: 547.51px;
+  height: 368px;
+  flex-shrink: 0;
+}
+
+
+
+
+
+/* (ბოლო სამი სურათი) სურათის ზომა */
+.post-media img{
+  width: 547.51px;
+  height: 368px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
+
+
+
+
+/* (ბოლო სამი სურათი) სურათზე არსებული პატარა წარწერა */
+
+.tag{
+  position: absolute;
+  top: 25px;
+  left: 34px;
+  background: #262626;
+  color: #ffffff;
+  padding: 9px 30px;
+  border-radius: 40px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  width: 175px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* (ბოლო სამი სურათი) სურათი მარჯვნივ არსებული პოსტის კოდი */
+.post-content{
+  display: flex;
+  flex-direction: column;
+  margin-left: 45.50px;
+  
+}
+
+
+
+
+/* (ბოლო სამი სურათ) თარიღი,ავტორის სახელი და ავტორი სურათი */
+
+.post-meta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+
+
+
+
+/* (ბოლო სამი სურათი) ავტორის სურათი და სახელი */
+.author{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25.58px;
+  margin-bottom: 35.50px;
+}
+
+
+
+
+
+
+/* (ბოლო სამი სურათი)  ავტორის სურათი */
+.avatar{
+  width: 65.50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16.86px;
+}
+
+
+
+
+
+/* (ბოლო სამი სურათი)ავტორი სახელი და თარიღი */
+.author-name,
+.date{
+  font-size: 12px;
+  color: #bcbcbc;
+}
+
+.date {
+  margin-right: 58px;
+  margin-left: 200px;
+}
+
+
+/* (ბოლო სამი სურათი) პოსტის სათაური */
+
+.title{
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 5px;
+  color: #262626;
+  width: 425px;
+  height: 94px;
+}
+
+
+
+
+
+/* (ბოლო სამი სურათი) პოსტის აღწერა */
+.desc{
+  font-size: 16px;
+  line-height: 1.6;
+  color: #262626;
+  margin-bottom: 18px;
+  width: 430px;
+  height: 73px;
+}
+
+
+
+
+
+/* (ბოლო სამი სურათი) რეადმორე */
+.readmore{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: 215px;
+  height: 23px;
+  color: #4CE0D7;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+}
+
+/* (ბოლო სამი სურათი) ჰოვერი რეადმორე */
+
+.readmore:hover{
+  text-decoration: underline;
+  font-weight: bold;
+  transform: scale(1.2);
+}
+
+
+
+/* (ბოლო სამი სურათი) ისარი */
+
+.arrow-icon{ flex-shrink: 0; }
+
+
+
+/* (ბოლოს სამი სურათის) კოდები */
+@media (max-width: 900px){
+  .post-card{ flex-direction: column; padding: 24px; }
+  .post-media{ width: 100%; height: 260px; }
+  .desc{ max-width: 100%; }
+}
+
+
+
+
+
+
+/* footerის სექცია */
+
+.site-footer{
+  max-width: 1440px;
+  height: 308px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 40px 40px 0 0;
+}
+
+
+
+/* content area inside footer*/
+
+.footer-inner{
+  padding: 90px 86px 95px 86px; 
+}
+
+
+
+/* ზედა მხარე footerის */
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* footerის ლოგო */
+
+.footer-brand{
+  font-family: "Cinzel", serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+  color: #262626;
+}
+
+
+/* ლოგოს ტექსტის ნაწილის უკან ლურჯი მონიშვნა */
+
+.brand-highlight{
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+
+
+/* ქმნის უკანა ლურჯ  მონიშნულ ფონს */
+
+.brand-highlight::before{
+  
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  top: 25%;             
+  height: 0.7em;         
+  background-color: #4CE0D7;
+  z-index: -1;
+}
+
+
+/* footer-s ქვედა  მარჯვენა მხარე: სათაური და სოციალური მედიის ნიშნები */
+
+.footer-social{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+
+
+/* "Let's Hang Out" ტექსტის გასტილვა */
+
+
+
+.footer-title{
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  color: #262626;
+}
+
+
+
+/* სოციალური ქსელები */
+
+
+.socials{
+  display: flex;
+  gap: 14px;
+}
+
+
+
+
+/* სოციალური ქსელები */
+
+
+.socials img{
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+
+
+
+/* ფოოტერ-ს გამყოფი ხაზი */
+
+.footer-divider{
+  max-width: 1267px;
+  width: 100%;
+  height: 1px;
+  background-color: #BCBCBC;
+  margin: 90px auto 34px; 
+}
+
+
+
+
+/* COPYRIGHT */
+
+.footer-bottom{
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  color: #262626;
+}
+
+.facebook:hover,
+.twitter:hover,
+.linkedin:hover,
+.youtube:hover,
+.instagram:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1400px){
+  .footer-divider{
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px){
+  .site-footer{
+    height: auto;
+  }
+
+  .footer-inner{
+    padding: 60px 24px;
+  }
+
+  .footer-top{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
+
 
 
     

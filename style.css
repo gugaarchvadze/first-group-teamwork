@@ -1,170 +1,160 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-body {
-font-family: Arial, sans-serif;
-}
 
 .header {
-padding: 40px 0px;
-width:  1272px;
-}
+  padding: 40px 0px;
+  width:  1272px;
+  }
 
 .container {
-display: flex;
-align-items: center;
-justify-content: space-between;
-max-width: 1272px; 
-margin: 0 95px;   
-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1272px; 
+  margin: 0 95px;   
+  width: 100%;
 }
 
 
 .menu-section {
-display: flex;
-align-items: center;
-gap: 70px; 
+  display: flex;
+  align-items: center;
+  gap: 70px; 
 }
 
 /* Logo */
 .logo img {
-height: 60px;
+  height: 60px;
 }
 
 /* Navigation */
 .nav {
-display: flex;
-gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 
 .nav a {
-color: #000;
-font-weight: 700;
+  color: #000;
+  font-weight: 700;
 }
 
 
 /* Right section */
 .right-section {
-display: flex;
-align-items: center;
-gap: 40px;
-}
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  }
 
 /* Contact Button */
 .contact-btn {
-background-color: #4CE0D7;
-padding: 10px 36px;
-border-radius: 25px;
-font-weight: 700;
-color: black;
+  background-color: #4CE0D7;
+  padding: 10px 36px;
+  border-radius: 25px;
+  font-weight: 700;
+  color: black;
 }
 
 /* Search */
 .search-icon {
-width: 47px;
-height: 47px;
+  width: 47px;
+  height: 47px;
 }
 
 /* Navigation links hover */
 .nav a:hover {
-color: #4cc9c0; 
-transition: color 0.3s ease; 
+  color: #4cc9c0; 
+  transition: color 0.3s ease; 
 }
 /* Contact button hover */
 .contact-btn:hover {
-background-color: #3bb3aa;
-color: white;
-transition: background-color 0.3s ease, color 0.3s ease;
-cursor: pointer;
-}
+  background-color: #3bb3aa;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  }
 
 /* Search icon hover */
 .search-icon:hover {
-transform: scale(1.1); 
-transition: transform 0.3s ease;
-cursor: pointer;
+  transform: scale(1.1); 
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .card-conteiner{
-width: 100%;
-max-width: 1272px;
-height: 559px;
-margin: 0 auto;   
-height: 559px;
-border-radius: 24px;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-image: url(qalis_pic.png);
-display: flex;
-align-items: center;
-position: relative;
-padding: 40px;
-box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 1272px;
+  height: 559px;
+  margin: 0 auto;   
+  height: 559px;
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(qalis_pic.png);
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
 }
 
 
 .content{
-color: white;
-max-width: 600px;
-position: relative;
-z-index: 1;
+  color: white;
+  max-width: 600px;
+  position: relative;
+  z-index: 1;
 }
 .title-text{
-display: flex;
-flex-direction: column;
-gap: 30px; 
-font-size: 14px;
-letter-spacing: 2px;
-font-weight: 600;
-margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 
 h1 { 
-font-size: 64px;
-line-height: 1.1;
-font-weight: 700;
-margin: 0 0 24px 0;
-font-size: 40px;
-text-transform: uppercase;
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 .highlight{
-  color: #3be8e8;
+   color: #3be8e8;
 }
 
 .desc{
-font-size: 18px;
-line-height: 1.6;
-margin: 0;
-max-width: 450px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 450px;
 }
 
 .title-text h1{
-font-weight: 400;
-font-size: 46px;
-line-height: 100%;
-letter-spacing: 0%;
-white-space: nowrap;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  white-space: nowrap;
 }
 
 .title-text h3{
-font-weight: 700;
-font-style: Bold;
-font-size: 12px;
-line-height: 100%;
-letter-spacing: 23%;
-text-transform: uppercase;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 23%;
+  text-transform: uppercase;
 }
 
 .title-text p{
-font-size: 15px;
-font-weight: 400px;
-}
+  font-size: 15px;
+  font-weight: 400px;
+  }
 
 
 .topics {

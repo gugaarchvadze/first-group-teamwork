@@ -17,12 +17,16 @@ a { text-decoration: none; }
 /* ბოლოს სამი სურათის მთლიანი კოდი */
 
 .posts{
-  max-width: 1204px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
   margin-top: 2924px;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 58px;
+  background-color: #f9f9f9;
 }
 
 
@@ -32,9 +36,9 @@ a { text-decoration: none; }
 
  /* (ბოლო სამი სურათის) სურათი+პოსტის კოდი */
 .post-card{
-  background: #822222;
+  background: #ffffff;
   border-radius: 18px;
-  box-shadow: #262626;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   display: flex; 
   width: 1204px;
   height: 368px;
@@ -279,7 +283,7 @@ a { text-decoration: none; }
 /* ქმნის უკანა ლურჯ  მონიშნულ ფონს */
 
 .brand-highlight::before{
-  content: "";
+  
   position: absolute;
   left: -4px;
   right: -4px;

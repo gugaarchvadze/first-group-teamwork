@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/* ===== Base / Reset ===== */
 *{
   margin: 0;
   padding: 0;
@@ -6,49 +6,467 @@
   font-family: 'Poppins', sans-serif;
 }
 
+a { text-decoration: none; color: inherit; }
+
+body{
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #262626;
+}
 
 
+main, header, footer{
+  width: 1440px;
+  margin: 0 auto;
+}
 
+/* ===== HEADER (Luka) ===== */
+.header{
+  padding: 40px 0;
+}
 
-a { text-decoration: none; }
-
-
-
-
-/* ბოლოს სამი სურათის მთლიანი კოდი */
-
-.posts{
+.header-container{
+  max-width: 1272px;
+  margin: 0;
+  padding: 0 95px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.menu-section{
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 1440px;
-  margin-top: 2924px;
+  gap: 60px;
+}
+
+img.component { 
+    height: 49px; 
+    margin-left: 0px;
+    margin-right: 200px;
+    width: 234px;
+
+}
+
+.nav{
+  display: flex;
+  gap: 60px;
+}
+
+.nav a{
+  color: #000;
+  font-weight: 700;
+}
+
+.nav a:hover{
+  color: #4cc9c0;
+  transition: color 0.3s ease;
+}
+
+.contact-btn{
+  background-color: #4CE0D7;
+  padding: 10px 36px;
+  border-radius: 25px;
+  font-weight: 700;
+  color: black;
+}
+
+.contact-btn:hover{
+  background-color: #3bb3aa;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.search-icon{
+  width: 47px;
+  height: 47px;
+}
+
+.search-icon:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* ===== HERO (Luka) ===== */
+.hero{
+  width: 100%;
+}
+
+
+.card-conteiner{
+  max-width: 1272px;
+  height: 559px;
+  margin: 0 auto;
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./assets1/qalis_pic.png");
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+img.hero-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  z-index: 1;
+}
+
+.hero-content{
+  color: white;
+  max-width: 600px;
+  position: relative;
+  z-index: 10;
+}
+
+.title-text{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.title-text h1{
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 1;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.title-text h3{
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+}
+
+.highlight{ color: #3be8e8; }
+
+.hero-desc{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 450px;
+  letter-spacing: normal;
+}
+
+/* ===== TOPICS (Luka) ===== */
+.topics{
+  margin-top: 120px;
+  padding-bottom: 100px;
+}
+
+.topics-header{
+  max-width: 1272px;
+  margin: 0 auto;
+  padding: 0 95px;
+}
+
+.topics-title{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.topics-wrapper{
+  max-width: 1272px;
+  margin: 0 auto;
+  padding: 40px 95px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  
+}
+
+.topic-card{
+  width: 204px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.topic-card img{
+  width: 88px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.topic-card h3{
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.topic-card button{
+  background: #4CE0D7;
+  border: none;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 10px 50px;
+  border-radius: 40px;
+  cursor: pointer;
+  color: #000;
+  transition: 0.3s;
+}
+
+.topic-card:hover{ transform: translateY(-10px); }
+.topic-card.active{ border: 3px solid #2b6cb0; }
+
+/* ===== FASHION (Zura) ===== */
+.fashion-container{
+  max-width: 1272px;
+  margin: 0 auto;
+  padding: 0 95px;
+}
+
+/* Scope Zura styles so they don't touch others */
+.fashion .box1{
+  position: relative;
+  width: 100%;
+  max-width: 1272px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.fashion .mask1{
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.fashion .btn{
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.fashion .pic1{
+  pointer-events: auto;
+  padding: 10px 82px;
+  font-size: 12px;
+  width: 234px;
+  height: 36.5px;
+  color: #fff;
+  background-color: #262626;
+  border-radius: 40px;
+  position: absolute;
+  top: 23px;
+  left: 47px;
+}
+
+.fashion .description{
+  display: flex;
+  align-items: center;
+  margin: 25px 0 30px;
+  color: #bcbcbc;
+  padding: 0 64px;
+}
+
+.fashion .log1{
+  width: 65px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.fashion .april{ margin-left: 150px; }
+.fashion .coming{ color: #f25e5e; margin-left: auto; }
+
+.fashion-content{
+  padding: 0 64px 50px;
+  margin-bottom: 25px;
+}
+
+.fashion-content h3{
+  font-size: 26px;
+  margin-bottom: 23px;
+}
+.fashion-content p{
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.fashion .readmore2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.fashion .readmore2 img{
+  width: 50px;
+  height: 40px;
+}
+
+.fashion a.readmore1{
+  color: #4ce0d7;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.2s ease, text-decoration 0.2s ease;
+}
+
+.fashion a.readmore1:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+/* ===== TRENDING (Zura) ===== */
+.trending{
+  max-width: 1272px;
+  margin: 55px auto 0;
+  padding: 0 95px;
+}
+
+.trending-title{
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 55px;
+}
+
+.trending-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 59px;
+  align-items: start;
+}
+
+.trending .box2{
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative
+}
+
+.trending .btn{
+  position: relative;
+}
+
+.trending .pic2{
+  padding: 9px 58px;
+  width: 175px;
+  height: 36px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #262626;
+  border-radius: 40px;
+  position: absolute;
+  top: 20px;
+  left: 34px;
+  z-index: 2;
+}
+.readmore2{
+    display: flex;                
+    align-items: center; 
+    justify-content: center;          
+    gap: 10px;                     
+    position: absolute;
+    bottom: 20px;
+    left: 34px;
+    cursor: pointer; 
+    z-index: 10;    
+    margin-top: 25px;  
+}
+.trending a.readmore1{
+  color: #4ce0d7;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.2s ease, text-decoration 0.2s ease;
+}
+.trending a.readmore1:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.trending .mask2{
+  width: 100%;
+  height: 278px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+.trending .description1{
+  display: flex;
+  align-items: center;
+  margin: 23px 0 30px;
+  color: #bcbcbc;
+  padding: 0 34px;
+}
+
+.trending .log2{
+  width: 65px;
+  height: 50px;
+  margin-right: 14px;
+}
+
+.trending .april1{ margin-left: auto; }
+
+.trending .content1{
+  padding: 0 34px 40px;
+
+}
+
+.trending h3.summ{
+  font-size: 26px;
+  margin-bottom: 5px;
+  max-width: 330px;
+}
+
+.trending .text1{
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 350px;
+  line-height: 1.6;
+  margin-bottom: 23px;
+}
+
+/* ===== POSTS (guga) ===== */
+.posts{
+  width: 1272px;
+  margin: 120px auto 0;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
   gap: 58px;
-  background-color: #f9f9f9;
 }
 
-
-
-
-
-
- /* (ბოლო სამი სურათის) სურათი+პოსტის კოდი */
 .post-card{
   background: #ffffff;
   border-radius: 18px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  display: flex; 
+  display: flex;
   width: 1204px;
   height: 368px;
+  margin: 0 auto;
+  
 }
-
-
-
-
-/* (ბოლო სამი სურათი) სურათი+თაგის კოდი */
 
 .post-media{
   position: relative;
@@ -57,23 +475,12 @@ a { text-decoration: none; }
   flex-shrink: 0;
 }
 
-
-
-
-
-/* (ბოლო სამი სურათი) სურათის ზომა */
 .post-media img{
   width: 547.51px;
-  height: 368px;
-  object-fit: cover;
+  height: 367.90px;
   border-radius: 18px;
   display: block;
 }
-
-
-
-
-/* (ბოლო სამი სურათი) სურათზე არსებული პატარა წარწერა */
 
 .tag{
   position: absolute;
@@ -93,91 +500,56 @@ a { text-decoration: none; }
   align-items: center;
 }
 
-
-
-
-/* (ბოლო სამი სურათი) სურათი მარჯვნივ არსებული პოსტის კოდი */
 .post-content{
   display: flex;
   flex-direction: column;
-  margin-left: 45.50px;
-  
+  margin-left: 45.5px;
+  margin-bottom: 69px;
 }
 
 
-
-
-/* (ბოლო სამი სურათ) თარიღი,ავტორის სახელი და ავტორი სურათი */
-
 .post-meta{
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 14px;
 }
 
-
-
-
-
-/* (ბოლო სამი სურათი) ავტორის სურათი და სახელი */
 .author{
   display: flex;
   align-items: center;
   gap: 12px;
   margin-top: 25.58px;
-  margin-bottom: 35.50px;
+  margin-bottom: 35.5px;
 }
 
-
-
-
-
-
-/* (ბოლო სამი სურათი)  ავტორის სურათი */
 .avatar{
-  width: 65.50px;
+  width: 65.5px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 16.86px;
 }
 
-
-
-
-
-/* (ბოლო სამი სურათი)ავტორი სახელი და თარიღი */
 .author-name,
 .date{
   font-size: 12px;
   color: #bcbcbc;
 }
 
-.date {
-  margin-right: 58px;
+.date{
   margin-left: 200px;
 }
 
-
-/* (ბოლო სამი სურათი) პოსტის სათაური */
-
-.title{
+.posts .title{
   font-size: 26px;
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: 5px;
-  color: #262626;
   width: 425px;
   height: 94px;
 }
 
-
-
-
-
-/* (ბოლო სამი სურათი) პოსტის აღწერა */
-.desc{
+.posts .desc{
   font-size: 16px;
   line-height: 1.6;
   color: #262626;
@@ -186,11 +558,6 @@ a { text-decoration: none; }
   height: 73px;
 }
 
-
-
-
-
-/* (ბოლო სამი სურათი) რეადმორე */
 .readmore{
   display: inline-flex;
   align-items: center;
@@ -201,57 +568,36 @@ a { text-decoration: none; }
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.24em;
+  margin-bottom: 69px;
 }
-
-/* (ბოლო სამი სურათი) ჰოვერი რეადმორე */
 
 .readmore:hover{
   text-decoration: underline;
-  font-weight: bold;
-  transform: scale(1.2);
+  transform: scale(1.08);
 }
-
-
-
-/* (ბოლო სამი სურათი) ისარი */
 
 .arrow-icon{ flex-shrink: 0; }
 
-
-
-/* (ბოლოს სამი სურათის) კოდები */
 @media (max-width: 900px){
-  .post-card{ flex-direction: column; padding: 24px; }
+  .post-card{ flex-direction: column; height: auto; }
   .post-media{ width: 100%; height: 260px; }
-  .desc{ max-width: 100%; }
+  .post-media img{ width: 100%; height: 260px; }
+  .posts .desc{ width: auto; height: auto; }
+  .date{ margin-left: 20px; }
 }
 
-
-
-
-
-
-/* footerის სექცია */
-
+/* ===== FOOTER (yours) ===== */
 .site-footer{
   max-width: 1440px;
-  height: 308px;
   margin: 0 auto;
   background: #ffffff;
   border-radius: 40px 40px 0 0;
+  margin-top: 70px;
 }
-
-
-
-/* content area inside footer*/
 
 .footer-inner{
-  padding: 90px 86px 95px 86px; 
+  padding: 90px 86px 95px 86px;
 }
-
-
-
-/* ზედა მხარე footerის */
 
 .footer-top{
   display: flex;
@@ -259,19 +605,13 @@ a { text-decoration: none; }
   align-items: center;
 }
 
-
-/* footerის ლოგო */
-
 .footer-brand{
-  font-family: "Cinzel", serif;
+  font-family: "cinzel", serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 1;
   color: #262626;
 }
-
-
-/* ლოგოს ტექსტის ნაწილის უკან ლურჯი მონიშვნა */
 
 .brand-highlight{
   position: relative;
@@ -279,23 +619,16 @@ a { text-decoration: none; }
   z-index: 1;
 }
 
-
-
-/* ქმნის უკანა ლურჯ  მონიშნულ ფონს */
-
 .brand-highlight::before{
-  
+  content: "";
   position: absolute;
   left: -4px;
   right: -4px;
-  top: 25%;             
-  height: 0.7em;         
+  top: 25%;
+  height: 0.7em;
   background-color: #4CE0D7;
   z-index: -1;
 }
-
-
-/* footer-s ქვედა  მარჯვენა მხარე: სათაური და სოციალური მედიის ნიშნები */
 
 .footer-social{
   display: flex;
@@ -303,35 +636,16 @@ a { text-decoration: none; }
   gap: 24px;
 }
 
-
-
-/* "Let's Hang Out" ტექსტის გასტილვა */
-
-
-
 .footer-title{
-  font-family: "Poppins", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1;
   color: #262626;
 }
-
-
-
-/* სოციალური ქსელები */
-
-
 .socials{
   display: flex;
   gap: 14px;
 }
-
-
-
-
-/* სოციალური ქსელები */
-
 
 .socials img{
   width: 24px;
@@ -339,26 +653,15 @@ a { text-decoration: none; }
   display: block;
 }
 
-
-
-
-/* ფოოტერ-ს გამყოფი ხაზი */
-
 .footer-divider{
   max-width: 1267px;
   width: 100%;
   height: 1px;
   background-color: #BCBCBC;
-  margin: 90px auto 34px; 
+  margin: 90px auto 34px;
 }
 
-
-
-
-/* COPYRIGHT */
-
 .footer-bottom{
-  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 1;
@@ -369,524 +672,17 @@ a { text-decoration: none; }
 .twitter:hover,
 .linkedin:hover,
 .youtube:hover,
-.instagram:hover {
+.instagram:hover{
   transform: scale(1.2);
 }
 
-
-
-
-
-
-/* RESPONSIVE */
-
-@media (max-width: 1400px){
-  .footer-divider{
-    width: 100%;
-  }
-}
-
 @media (max-width: 900px){
-  .site-footer{
-    height: auto;
-  }
-
-  .footer-inner{
-    padding: 60px 24px;
-  }
-
+  .footer-inner{ padding: 60px 24px; }
   .footer-top{
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
   }
+  .trending-grid{ grid-template-columns: 1fr; }
 }
-
-
-
-    
-}
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1440px;
-    width: 100%;
-    background-color: #f9f9f9;
-    margin: 0 auto;
-}
-.container {
-    max-width: 1204px;
-    height: 698px;
-    margin-top: 1280px;
-    border-radius: 20px;
-    background-color: #ffffff;
-    padding: 0;
-    margin-bottom: 97px;
-    
-    
-    
-}
-.box {
-    position: relative;
-    width: 1204px;
-    height: 698px;
-    margin: 0 auto;
-   
-
-    
-      
-}
-.mask1 {
-    display: block;
-    width: 1204px;
-    height: 360px;
-    margin-bottom: 25px;
-
-    
-    
-    
-}
-.btn {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    font-size: 12px;
-}
-
-.pic1 {
-    padding: 10px 82px;
-    font-size: 12px;
-    width: 234px;
-    height: 36.50px;
-    color: #ffffff;
-    background-color: #262626;
-    border-radius: 40px;
-    margin: 23px 922px 299px 47px;
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-   
-
-
-}
-.description {
-    display: flex;
-   
-    align-items: center; 
-    margin-bottom: 30px;
-  
-    color: #bcbcbc;
-}
-.log1 {
-    width: 65px;
-    height: 50px;
-    margin-left: 65px;
-    margin-right: 20px;
-}
-.april {
-    margin-left: 150px;
-}
-h6 {
-    font-family: Poppins;
-    font-weight: 14px;
-   
-
-}
-.coming {
-    color: #f25e5e;
-    margin-left:  500px;
-    
-}
-
-.content {
-    min-height: 198px;
-    margin-left: 64px;
-    margin-right: 407px;
- 
-}
-h3 {
-    width: 1044px;
-    height: 36px;
-    font-size: 26px;
-    margin-bottom: 23px;
-}
-
-.readmore2 {
-    display: flex;                
-    align-items: center;           
-    gap: 10px;                     
-    margin-top: 25px;
-    cursor: pointer;
-    position: relative;  
-    z-index: 10;      
-}
-
-
-.readmore2 img {
-    width: 50px;
-    height: 40px;
-    
-}
-
-
-a.readmore1 {
-    color: #4ce0d7;
-    text-decoration: none;          
-    font-weight: normal;            
-    display: inline-flex;           
-    align-items: center;
-    font-weight: normal;
-    transition: transform 0.2s ease, font-weight 0.2s ease, text-decoration 0.2s ease;
-    width: 215px;
-    height: 24px;
-    font-size: 12px;
-    font-weight: 700px;
-}
-
-
-a.readmore1:hover {
-    text-decoration: underline;    
-    font-weight: bold;              
-    transform: scale(1.2);          
-}
-h2 {
-    font-weight: 700px;
-    font-size: 32px;
-    margin-bottom: 55px;
-}
-.container1 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 59px;
-    align-items: center;
-    justify-content: center;
-   
-}
-.box2 {
-    width: 570px;
-    height: 670px;
-    background-color: #ffffff;
-    border-radius: 20px;
-
-}
-.mask2 {
-    width: 100%;
-    height: 278px;
-    border-radius: 20px;
-    margin-bottom: 23px;
-}
-.description1 {
-    display: flex;
-    
-    align-items: center; 
-    margin-bottom: 30px;
-    
-    color: #bcbcbc;
-}
-.log2 {
-    width: 65px;
-    height: 50px;
-    margin-left: 35px;
-    margin-right: 14px;
-    
-}
-
-.april1 {
-    margin-left: 195px;
-}
-.pic2 {
-    padding: 9px 58px;
-    width: 175px;
-    height: 36px;
-    font-size: 12px;
-    color: #ffffff;
-    background-color: #262626;
-    border-radius: 40px;
-    margin-top: 20px;
-    margin-left: 34px;
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-}
-.content1 {
-    margin-left: 34px;
-    
-}
-h3.summ {
-    width: 330px;
-    height: 94px;
-    font-size: 26px;
-    color: #262626;
-    margin-right: 280px;
-    margin-bottom: 5px;
-}
-.text1 {
-    font-size: 16px;
-    font-weight: 400px;
-    width: 350px;
-    height: 98px;
-   
-    
-}
-=======
-
-.header {
-  padding: 40px 0px;
-  width:  1272px;
-  }
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1272px; 
-  margin: 0 95px;   
-  width: 100%;
-}
-
-
-.menu-section {
-  display: flex;
-  align-items: center;
-  gap: 70px; 
-}
-
-/* Logo */
-.logo img {
-  height: 60px;
-}
-
-/* Navigation */
-.nav {
-  display: flex;
-  gap: 50px;
-}
-
-.nav a {
-  color: #000;
-  font-weight: 700;
-}
-
-
-/* Right section */
-.right-section {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  }
-
-/* Contact Button */
-.contact-btn {
-  background-color: #4CE0D7;
-  padding: 10px 36px;
-  border-radius: 25px;
-  font-weight: 700;
-  color: black;
-}
-
-/* Search */
-.search-icon {
-  width: 47px;
-  height: 47px;
-}
-
-/* Navigation links hover */
-.nav a:hover {
-  color: #4cc9c0; 
-  transition: color 0.3s ease; 
-}
-/* Contact button hover */
-.contact-btn:hover {
-  background-color: #3bb3aa;
-  color: white;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-  }
-
-/* Search icon hover */
-.search-icon:hover {
-  transform: scale(1.1); 
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.card-conteiner{
-  width: 100%;
-  max-width: 1272px;
-  height: 559px;
-  margin: 0 auto;   
-  height: 559px;
-  border-radius: 24px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(qalis_pic.png);
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding: 40px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-}
-
-
-.content{
-  color: white;
-  max-width: 600px;
-  position: relative;
-  z-index: 1;
-}
-.title-text{
-  display: flex;
-  flex-direction: column;
-  gap: 30px; 
-  font-size: 14px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-
-h1 { 
-  font-size: 64px;
-  line-height: 1.1;
-  font-weight: 700;
-  margin: 0 0 24px 0;
-  font-size: 40px;
-  text-transform: uppercase;
-}
-.highlight{
-   color: #3be8e8;
-}
-
-.desc{
-  font-size: 18px;
-  line-height: 1.6;
-  margin: 0;
-  max-width: 450px;
-}
-
-.title-text h1{
-  font-weight: 400;
-  font-size: 46px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  white-space: nowrap;
-}
-
-.title-text h3{
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 12px;
-  line-height: 100%;
-  letter-spacing: 23%;
-  text-transform: uppercase;
-}
-
-.title-text p{
-  font-size: 15px;
-  font-weight: 400px;
-  }
-
-
-.topics {
-  margin-top: 120px;
-  padding-bottom: 100px;
-  
-}
-
-
-.topic-container {
-  width: 100%;
-  max-width: 1272px;
-  margin: 0 auto;
-  padding: 0 95px;
-}
-
-
-.topics-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 1px;
-  margin-left: 95px;
-  font-style: bold;
-  
-}
-
-.topics-wrapper {
-  display: flex;
- justify-content: space-between;
-  gap: 10px;
-  margin: 95px;
-}
-
-.topic-card {
-  width: 204px;
-  background: white;
-  border-radius: 20px;
-  padding: 20px 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  transition: 0.3s;
-}
-
-.topic-card img {
-  width: 88px;
-  margin-bottom: 20px;
-  opacity: 0.5;
-}
-
-.topic-card h3 {
-  font-weight: 700px;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.topic-card button {
-  background: #4CE0D7;
-  border: none;
-  font-weight: 700px;
-  font-size: 12px;
-  padding: 10px 50px;
-  border-radius: 40px;
-  cursor: pointer;
-  color: rgb(0, 0, 0);
-  transition: 0.3s;
-}
-
-.topic-card:hover {
-  transform: translateY(-10px);
-}
-
-.topic-card.active {
-  border: 3px solid #2b6cb0;
-}
-
- 
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
->>>>>>> header+topics
 
